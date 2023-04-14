@@ -1,0 +1,22 @@
+.navbar {
+  background-color: rgba(0, 0, 0, 0.01);
+  backdrop-filter: blur(5px);
+}
+
+.navbarBrand,
+.navbarNav .navLink {
+  color: #fff;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: #fff;
+}
+
+.navbar-dark .navbar-toggler:focus,
+.navbar-dark .navbar-toggler:hover {
+  background-color: #fff;
+}
