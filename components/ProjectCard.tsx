@@ -2,14 +2,23 @@ import React, { useState, MouseEvent } from "react";
 import ReactCardFlip from "react-card-flip";
 import Image from "next/image";
 import { Nunito } from "@next/font/google";
-import { Card, Button } from "react-bootstrap";
+import { Card, Button, Carousel } from "react-bootstrap";
 import styles from "@/styles/ProjectCard.module.css";
+import { CardFront } from "./CardFront";
+import { CardBack } from "./CardBack";
+
+interface Technology {
+  name: string;
+  imgSrc: string;
+}
 
 interface Props {
   title: string;
   description: string;
-  imageSrc: string;
-  url?: string; // added new optional parameter for url
+  imageSrc: string[];
+  url?: string;
+  sourceUrl?: string;
+  usedTech?: Technology[];
 }
 
 const nunito = Nunito({ subsets: ["latin"] });
@@ -19,15 +28,16 @@ const ProjectCard: React.FC<Props> = ({
   description,
   imageSrc,
   url,
+  sourceUrl,
+  usedTech,
 }) => {
   const [isFlipped, setIsFlipped] = useState<boolean>(false);
 
-  const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
-    event.preventDefault();
+  const handleClick = () => {
     setIsFlipped(!isFlipped);
   };
 
-  const handleGoToPage = (event: MouseEvent<HTMLButtonElement>) => {
+  const handleGoToPage = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
     window.open(url, "_blank");
   };
@@ -35,20 +45,45 @@ const ProjectCard: React.FC<Props> = ({
   return (
     <div className={`${styles.projectCardContainer}`}>
       <ReactCardFlip isFlipped={isFlipped}>
-        <Card style={{ borderRadius: "10px", border: "none" }}>
-          <Card.Img
-            style={{
-              height: "19rem",
-              borderRadius: "10px",
-              objectFit: "cover",
-            }}
-            variant="top"
-            src="/project-img/twitter.gif"
+        {/* <Card style={{ borderRadius: "10px", border: "none" }}>
+          {imageSrc.length > 1 ? (
+            <Carousel>
+              {imageSrc.map((src, index) => (
+                <Carousel.Item key={index}>
+                  <img
+                    className="d-block w-100"
+                    src={src}
+                    alt={`slide ${index + 1}`}
+                    style={{
+                      height: "19rem",
+                      borderRadius: "10px",
+                      objectFit: "cover",
+                    }}
+                  />
+                </Carousel.Item>
+              ))}
+            </Carousel>
+          ) : (
+            <Card.Img
+              style={{
+                height: "19rem",
+                borderRadius: "10px",
+                objectFit: "cover",
+              }}
+              variant="top"
+              src={imageSrc[0]}
+            />
+          )}
+        </Card> */}
+        <div>
+          <CardFront
+            title={title}
+            imageSrc={imageSrc}
+            onButtonClick={handleClick}
           />
-        </Card>
-
-        <Card
-          style={{ width: "100%", height: "19rem", backgroundColor: "black" }}
+        </div>
+        {/* <Card
+          style={{ width: "100%", height: "400px", backgroundColor: "black" }}
         >
           <Card.Body>
             <Card.Text>{description}</Card.Text>
@@ -58,28 +93,19 @@ const ProjectCard: React.FC<Props> = ({
               </Button>
             )}
           </Card.Body>
-        </Card>
-      </ReactCardFlip>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          marginTop: "10px",
-        }}
-      >
-        <h4
-          style={{ paddingTop: "5px", color: "white" }}
-          className={`${nunito.className}`}
-        >
-          <b>{title}</b>
-        </h4>
+        </Card> */}
+
         <div>
-          <Button variant="outline-light" onClick={handleClick}>
-            Learn More
-          </Button>
+          <CardBack
+            title={title}
+            description={description}
+            url={url}
+            sourceUrl={sourceUrl}
+            usedTech={usedTech ? usedTech : undefined}
+            onButtonClick={handleClick}
+          />
         </div>
-      </div>
+      </ReactCardFlip>
     </div>
   );
 };
