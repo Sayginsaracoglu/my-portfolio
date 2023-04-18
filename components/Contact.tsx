@@ -1,6 +1,6 @@
 import React from "react";
 import { Modal, Text } from "@nextui-org/react";
-import { Button, Form } from "react-bootstrap";
+import { Button, Form, Nav } from "react-bootstrap";
 import emailjs from "emailjs-com";
 
 export default function Contact() {
@@ -33,9 +33,8 @@ export default function Contact() {
 
   return (
     <div>
-      <Button variant="outline-light" onClick={handler}>
-        Contact
-      </Button>
+      <Nav.Link onClick={handler}>Contact</Nav.Link>
+
       <Modal
         closeButton
         blur
