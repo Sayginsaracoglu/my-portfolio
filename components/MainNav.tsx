@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "@/styles/MainNav.module.css";
 import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/router";
+import Contact from "./Contact";
 
 function MainNav() {
   const router = useRouter();
@@ -71,7 +72,7 @@ function MainNav() {
             backgroundColor: "transparent",
             backdropFilter: "blur(3px)",
           }}
-          className="fixed-top navbar-dark"
+          className="absolute-top navbar-dark"
           expand="lg"
         >
           <Container>
@@ -104,22 +105,22 @@ function MainNav() {
               </Nav>
 
               <Nav>
-                <Link href="/register" passHref legacyBehavior>
-                  <Nav.Link active={router.pathname === "/contact"}>
-                    Contact
-                  </Nav.Link>
-                </Link>
-                <Button variant="outline-light" onClick={handleResumeDownload}>
-                  Resume
-                </Button>
+                <Nav.Item style={{ marginRight: "10px" }}>
+                  <Contact />
+                </Nav.Item>
+                <Nav.Item>
+                  <Button
+                    variant="outline-light"
+                    onClick={handleResumeDownload}
+                  >
+                    Resume
+                  </Button>
+                </Nav.Item>
               </Nav>
             </Navbar.Collapse>
           </Container>
         </Navbar>
       </div>
-      <br />
-      <br />
-      <br />
     </>
   );
 }

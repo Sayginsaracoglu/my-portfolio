@@ -1,9 +1,10 @@
 .footer {
+  bottom: 0;
+  width: 100%;
   color: white;
   background-color: transparent;
   padding-top: 12px;
   align-items: center;
-  z-index: 2; /* add this line */
 }
 .footer-content {
   display: flex;

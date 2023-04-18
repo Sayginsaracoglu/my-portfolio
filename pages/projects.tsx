@@ -4,10 +4,18 @@ import { Card } from "react-bootstrap";
 import ProjectCard from "@/components/ProjectCard";
 import { Row, Col } from "react-bootstrap";
 import projects from "@/data/projectsData";
+import technologies from "@/data/technologiesData";
+interface Technology {
+  name: string;
+  imgSrc: string;
+}
+
+const emptyTech: Technology = { name: "", imgSrc: "" };
 
 export default function Projects() {
   return (
     <>
+      <br />
       <Row
         className="gy-4"
         style={{
@@ -15,20 +23,21 @@ export default function Projects() {
           backdropFilter: "blur(3px)",
         }}
       >
-        {projects.map((project) => (
-          <Col lg={6} key={project.id}>
-            <ProjectCard
-              title={project.title}
-              description={project.description}
-              imageSrc={project.imageSrc}
-              url={project.url ? project.url : undefined}
-            />
-            <br />
-            <br />
-            <br />
-            <br />
-          </Col>
-        ))}
+        {projects.map(
+          (project) =>
+            project.active && (
+              <Col lg={6} key={project.id}>
+                <ProjectCard
+                  title={project.title}
+                  description={project.description}
+                  imageSrc={project.imageSrc}
+                  sourceUrl={project.sourceUrl}
+                  url={project.url ? project.url : undefined}
+                  usedTech={project.usedTech ? project.usedTech : undefined}
+                />
+              </Col>
+            )
+        )}
       </Row>
     </>
   );
