@@ -21,7 +21,8 @@ export default function Projects() {
           backdropFilter: "blur(3px)",
         }}
       >
-        {projects.map(
+        Hello
+        {/* {projects.map(
           (project) =>
             project.active && (
               <Col lg={6} key={project.id}>
@@ -35,7 +36,7 @@ export default function Projects() {
                 />
               </Col>
             )
-        )}
+        )} */}
       </Row>
     </>
   );
