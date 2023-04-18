@@ -58,8 +58,6 @@
 .icon {
   transition: filter 0.3s;
 }
-.icon:hover {
-}
 
 @media (max-width: 1024px) {
   .icon {
