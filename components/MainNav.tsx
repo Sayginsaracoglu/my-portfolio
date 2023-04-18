@@ -1,7 +1,6 @@
 import { Container, Nav, Navbar, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Link from "next/link";
-import styles from "@/styles/MainNav.module.css";
 import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/router";
 import Contact from "./Contact";
