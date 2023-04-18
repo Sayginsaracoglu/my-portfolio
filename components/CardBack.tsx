@@ -1,3 +1,4 @@
+"use client";
 import { Card, Col, Row, Button, Text, Grid, Link } from "@nextui-org/react";
 import technologies from "@/data/technologiesData";
 import TechSlider from "./TechSlider";

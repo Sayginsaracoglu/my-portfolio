@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Modal, Text } from "@nextui-org/react";
 import { Button, Form, Nav } from "react-bootstrap";

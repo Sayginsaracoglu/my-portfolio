@@ -1,3 +1,4 @@
+"use client";
 import { Card, Col, Row, Button, Text, Link } from "@nextui-org/react";
 
 interface CardFrontProps {

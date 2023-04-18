@@ -1,10 +1,8 @@
-import { useState, useEffect } from "react";
-import Image from "next/image";
-import { Card } from "react-bootstrap";
+"use client";
 import ProjectCard from "@/components/ProjectCard";
 import { Row, Col } from "react-bootstrap";
 import projects from "@/data/projectsData";
-import technologies from "@/data/technologiesData";
+
 interface Technology {
   name: string;
   imgSrc: string;

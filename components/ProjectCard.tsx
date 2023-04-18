@@ -1,8 +1,7 @@
+"use client";
 import React, { useState, MouseEvent } from "react";
 import ReactCardFlip from "react-card-flip";
-import Image from "next/image";
 import { Nunito } from "@next/font/google";
-import { Card, Button, Carousel } from "react-bootstrap";
 import styles from "@/styles/ProjectCard.module.css";
 import { CardFront } from "./CardFront";
 import { CardBack } from "./CardBack";
