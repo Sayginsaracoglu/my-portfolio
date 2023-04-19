@@ -69,7 +69,7 @@ const projects = [
   },
   {
     id: 6,
-    title: "Order Maker",
+    title: "Order Management Desktop Application",
     description:
       "A desktop application built using C++ that manages customer orders for a business, filling orders based on inventory at different stations, and managing orders using a line manager.",
     imageSrc: [
@@ -108,7 +108,7 @@ const projects = [
   },
   {
     id: 11,
-    title: "Politek Spray Foam Insulation Webpages",
+    title: "Politek Spray Foam Insulation",
     description:
       "A set of webpages built using WordPress to promote spray foam insulation services for same client.",
     imageSrc: ["/project-img/politek.png"],
