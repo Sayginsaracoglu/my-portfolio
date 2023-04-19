@@ -1,12 +1,12 @@
 html,
 body {
-  min-height: auto;
-
+  min-height: 100%;
+  margin: 0;
   overflow-x: hidden;
 }
 
 body {
-  background-image: url("../public/background.png");
+  background-image: url("../public/backgroundt.jpg");
 }
 
 a {
