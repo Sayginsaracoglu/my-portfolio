@@ -11,13 +11,9 @@ interface LayoutProps {
 function Layout(props: LayoutProps) {
   return (
     <>
-      <div style={{ minHeight: "100vh" }}>
+      <div>
         <MainNav />
         <Container>{props.children}</Container>
-        <br />
-        <br />
-        <br />
-        <Footer />
       </div>
     </>
   );

@@ -8,6 +8,7 @@ function Footer() {
         backgroundColor: "transparent",
         backdropFilter: "blur(3px)",
         position: "absolute",
+        bottom: 0,
       }}
       className={` mt-5  text-center ${styles.footer}`}
     >
