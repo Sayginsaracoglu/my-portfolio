@@ -7,8 +7,9 @@ function Footer() {
       style={{
         backgroundColor: "transparent",
         backdropFilter: "blur(3px)",
+        position: "absolute",
       }}
-      className={`absolute-bottom mt-5  text-center ${styles.footer}`}
+      className={` mt-5  text-center ${styles.footer}`}
     >
       <Container className={styles["footer-content"]}>
         <p>&copy;{new Date().getFullYear()} Saygin Saracoglu </p>
