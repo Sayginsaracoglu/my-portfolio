@@ -43,8 +43,8 @@ const ProjectCard: React.FC<Props> = ({
 
   return (
     <div className={`${styles.projectCardContainer}`}>
-      {/* <ReactCardFlip isFlipped={isFlipped}> */}
-      {/* <Card style={{ borderRadius: "10px", border: "none" }}>
+      <ReactCardFlip isFlipped={isFlipped}>
+        {/* <Card style={{ borderRadius: "10px", border: "none" }}>
           {imageSrc.length > 1 ? (
             <Carousel>
               {imageSrc.map((src, index) => (
@@ -74,14 +74,14 @@ const ProjectCard: React.FC<Props> = ({
             />
           )}
         </Card> */}
-      <div>
-        <CardFront
-          title={title}
-          imageSrc={imageSrc}
-          onButtonClick={handleClick}
-        />
-      </div>
-      {/* <Card
+        <div>
+          <CardFront
+            title={title}
+            imageSrc={imageSrc}
+            onButtonClick={handleClick}
+          />
+        </div>
+        {/* <Card
           style={{ width: "100%", height: "400px", backgroundColor: "black" }}
         >
           <Card.Body>
@@ -94,17 +94,17 @@ const ProjectCard: React.FC<Props> = ({
           </Card.Body>
         </Card> */}
 
-      <div>
-        <CardBack
-          title={title}
-          description={description}
-          url={url}
-          sourceUrl={sourceUrl}
-          usedTech={usedTech ? usedTech : undefined}
-          onButtonClick={handleClick}
-        />
-      </div>
-      {/* </ReactCardFlip> */}
+        <div>
+          <CardBack
+            title={title}
+            description={description}
+            url={url}
+            sourceUrl={sourceUrl}
+            usedTech={usedTech ? usedTech : undefined}
+            onButtonClick={handleClick}
+          />
+        </div>
+      </ReactCardFlip>
     </div>
   );
 };
