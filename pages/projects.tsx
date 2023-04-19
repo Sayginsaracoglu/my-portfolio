@@ -33,14 +33,15 @@ export default function Projects() {
                   url={project.url ? project.url : undefined}
                   usedTech={project.usedTech ? project.usedTech : undefined}
                 /> */}
-                <Card style={{ width: "18rem" }}>
-                  <Card.Img variant="top" src="holder.js/100px180" />
+                <Card style={{ width: "auto", borderRadius: "10px" }}>
+                  <Card.Img
+                    style={{ objectFit: "cover", height: "12rem" }}
+                    variant="top"
+                    src={project.imageSrc[0]}
+                  />
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
+                    <Card.Title>{project.title}</Card.Title>
+                    <Card.Text>{project.description}</Card.Text>
                     <Button variant="primary">Go somewhere</Button>
                   </Card.Body>
                 </Card>
