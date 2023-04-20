@@ -17,7 +17,7 @@ export default function Home() {
             Hi, I'm <b>Saygin</b>
           </p>
           <div style={{ minHeight: "10rem" }}>
-            <p className={styles.description}>
+            <span className={styles.description}>
               <Typewriter
                 options={{
                   loop: true,
@@ -43,7 +43,7 @@ export default function Home() {
                     .start();
                 }}
               />
-            </p>
+            </span>
           </div>
         </Container>
         <div className={styles.tech}>

@@ -28,6 +28,10 @@ const technologies = [
     imgSrc: "/icons/reactN.png",
   },
   {
+    name: "Vue.js",
+    imgSrc: "/icons/vue.png",
+  },
+  {
     name: "Python",
     imgSrc: "/icons/python.png",
   },

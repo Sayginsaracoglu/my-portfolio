@@ -21,10 +21,10 @@ function MainNav() {
   }, []);
 
   const handleResumeDownload = () => {
-    const fileUrl = "@/public/resume.pdf"; // Replace with your file path
+    const fileUrl = "SayginSaracogluResume.pdf"; // Replace with your file path
     const link = document.createElement("a");
     link.href = fileUrl;
-    link.download = "resume.pdf";
+    link.download = "SayginSaracogluResume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
