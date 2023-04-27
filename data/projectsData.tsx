@@ -2,6 +2,23 @@ import technologies from "./technologiesData";
 
 const projects = [
   {
+    id: 4,
+    title: "The MET Art Finder",
+    description:
+      "A web application that allows users to search for and view information about art pieces from The Metropolitan Museum of Art using Next.js, Bootstrap, and Node.js.",
+    imageSrc: ["/project-img/met.png"],
+    url: "https://art-finder.vercel.app/",
+    sourceUrl: "https://github.com/Sayginsaracoglu/Art-Work-Finder",
+    usedTech: [
+      technologies[0],
+      technologies[1],
+      technologies[2],
+      technologies[3],
+      technologies[9],
+    ],
+    active: true,
+  },
+  {
     id: 1,
     title: "ISS Distance Calculator",
     description:
@@ -34,23 +51,7 @@ const projects = [
     usedTech: [technologies[0], technologies[1], technologies[3]],
     active: true,
   },
-  {
-    id: 4,
-    title: "The MET Art Finder",
-    description:
-      "A web application that allows users to search for and view information about art pieces from The Metropolitan Museum of Art using Next.js, Bootstrap, and Node.js.",
-    imageSrc: ["/project-img/met.png"],
-    url: "https://art-finder.vercel.app/",
-    sourceUrl: "https://github.com/Sayginsaracoglu/Art-Work-Finder",
-    usedTech: [
-      technologies[0],
-      technologies[1],
-      technologies[2],
-      technologies[3],
-      technologies[9],
-    ],
-    active: true,
-  },
+
   {
     id: 5,
     title: "ChatGeniusPro",
@@ -110,7 +111,7 @@ const projects = [
     id: 11,
     title: "Politek Spray Foam Insulation",
     description:
-      "A set of webpages built using WordPress to promote spray foam insulation services for same client.",
+      "Created a websites for Politek and Alfa Spray Foam Insulation companies using wordpress\nDesigned the user interface with a responsive layout, intuitive navigation, and visual displays of services\nDeveloped features such as service information, blogs and contact information to improve user experience\nImplemented SEO techniques to increase the visibility and accessibility of the website\n",
     imageSrc: ["/project-img/politek.png"],
     url: "https://www.politekpoliuretan.com/",
     active: true,
@@ -119,7 +120,7 @@ const projects = [
     id: 14,
     title: "Alfa Spray Foam Insulation",
     description:
-      "A set of webpages built using WordPress to promote spray foam insulation services for same client.",
+      "Created a websites for Politek and Alfa Spray Foam Insulation companies using wordpress\nDesigned the user interface with a responsive layout, intuitive navigation, and visual displays of services\nDeveloped features such as service information, blogs and contact information to improve user experience\nImplemented SEO techniques to increase the visibility and accessibility of the website\n",
     imageSrc: ["/project-img/alfa.png"],
     url: "https://www.alfapoliuretan.com",
     active: true,
