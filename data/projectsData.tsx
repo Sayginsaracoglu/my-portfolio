@@ -14,7 +14,8 @@ const projects = [
       technologies[1],
       technologies[2],
       technologies[3],
-      technologies[9],
+      technologies[5],
+      technologies[10],
     ],
     active: true,
   },
@@ -59,13 +60,7 @@ const projects = [
       "A mobile application that uses the ChatGPT language model to generate responses to user input in real-time, built using React Native, TypeScript, and Node.js.",
     imageSrc: ["/project-img/chatGenius1.png"],
     sourceUrl: "https://github.com/Sayginsaracoglu/ChatGeniusPro",
-    usedTech: [
-      technologies[3],
-      technologies[4],
-      technologies[5],
-      technologies[6],
-      technologies[9],
-    ],
+    usedTech: [technologies[4], technologies[6], technologies[10]],
     active: true,
   },
   {
@@ -80,7 +75,7 @@ const projects = [
     ],
     sourceUrl: "https://github.com/Sayginsaracoglu/MS3",
 
-    usedTech: [technologies[8]],
+    usedTech: [technologies[9]],
     active: true,
   },
 
@@ -90,12 +85,7 @@ const projects = [
     description:
       "A desktop application that uses the ChatGPT language model to generate responses to user input, built using Python.",
     imageSrc: ["/project-img/twitter.gif"],
-    usedTech: [
-      technologies[2],
-      technologies[6],
-      technologies[9],
-      technologies[11],
-    ],
+    usedTech: [technologies[8]],
     active: true,
   },
   {
@@ -104,7 +94,7 @@ const projects = [
     description:
       "A desktop application that allows users to interact with the ChatGPT language model in real-time, built using Python.",
     imageSrc: ["/project-img/heyComputer.png"],
-    usedTech: [technologies[7]],
+    usedTech: [technologies[8]],
     active: true,
   },
   {
