@@ -73,7 +73,6 @@ export default function Projects() {
               <Card.Text style={{ color: "white" }}>
                 {projects[0].description}
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
             </Card.Body>
           </Card>
         ) : (
@@ -129,17 +128,6 @@ export default function Projects() {
                       <Card.Text style={{ color: "white" }}>
                         {project.description}
                       </Card.Text>
-                      {project.url && (
-                        <Button variant="primary">
-                          <Link
-                            color="primary"
-                            target="_blank"
-                            href={project.url}
-                          >
-                            View Page
-                          </Link>
-                        </Button>
-                      )}
                     </Card.Body>
                   </Card>
                 ) : (
