@@ -20,6 +20,32 @@ const projects = [
     active: true,
   },
   {
+    id: 6,
+    title: "Order Management Desktop Application",
+    description:
+      "A desktop application built using C++ that manages customer orders for a business, filling orders based on inventory at different stations, and managing orders using a line manager.",
+    imageSrc: [
+      "/project-img/order1.png",
+      "/project-img/order2.png",
+      "/project-img/order3.png",
+    ],
+    sourceUrl: "https://github.com/Sayginsaracoglu/MS3",
+
+    usedTech: [technologies[9]],
+    active: true,
+  },
+
+  {
+    id: 5,
+    title: "ChatGeniusPro",
+    description:
+      "A mobile application that uses the ChatGPT language model to generate responses to user input in real-time, built using React Native, TypeScript, and Node.js.",
+    imageSrc: ["/project-img/chatGenius1.png"],
+    sourceUrl: "https://github.com/Sayginsaracoglu/ChatGeniusPro",
+    usedTech: [technologies[4], technologies[6], technologies[10]],
+    active: true,
+  },
+  {
     id: 1,
     title: "ISS Distance Calculator",
     description:
@@ -54,32 +80,6 @@ const projects = [
   },
 
   {
-    id: 5,
-    title: "ChatGeniusPro",
-    description:
-      "A mobile application that uses the ChatGPT language model to generate responses to user input in real-time, built using React Native, TypeScript, and Node.js.",
-    imageSrc: ["/project-img/chatGenius1.png"],
-    sourceUrl: "https://github.com/Sayginsaracoglu/ChatGeniusPro",
-    usedTech: [technologies[4], technologies[6], technologies[10]],
-    active: true,
-  },
-  {
-    id: 6,
-    title: "Order Management Desktop Application",
-    description:
-      "A desktop application built using C++ that manages customer orders for a business, filling orders based on inventory at different stations, and managing orders using a line manager.",
-    imageSrc: [
-      "/project-img/order1.png",
-      "/project-img/order2.png",
-      "/project-img/order3.png",
-    ],
-    sourceUrl: "https://github.com/Sayginsaracoglu/MS3",
-
-    usedTech: [technologies[9]],
-    active: true,
-  },
-
-  {
     id: 9,
     title: "askGPT",
     description:
@@ -110,7 +110,7 @@ const projects = [
     id: 14,
     title: "Alfa Spray Foam Insulation",
     description:
-      "Created a websites for Politek and Alfa Spray Foam Insulation companies using wordpress\nDesigned the user interface with a responsive layout, intuitive navigation, and visual displays of services\nDeveloped features such as service information, blogs and contact information to improve user experience\nImplemented SEO techniques to increase the visibility and accessibility of the website\n",
+      "Created a websites for Politek and Alfa Spray Foam Insulation companies using wordpress\nDesigned the user interface , intuitive navigation, and visual displays of services\nDeveloped features such as service information, blogs and contact information to improve user experience\nImplemented SEO techniques to increase the visibility and accessibility of the website\n",
     imageSrc: ["/project-img/alfa.png"],
     url: "https://www.alfapoliuretan.com",
     active: true,
