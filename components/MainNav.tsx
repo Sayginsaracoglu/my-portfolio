@@ -21,10 +21,10 @@ function MainNav() {
   }, []);
 
   const handleResumeDownload = () => {
-    const fileUrl = "SayginSaracogluResume.pdf"; // Replace with your file path
+    const fileUrl = "SayginResumeFinal.pdf"; // Replace with your file path
     const link = document.createElement("a");
     link.href = fileUrl;
-    link.download = "SayginSaracogluResume.pdf";
+    link.download = "SayginResumeFinal.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
