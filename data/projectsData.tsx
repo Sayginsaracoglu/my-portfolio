@@ -20,6 +20,25 @@ const projects = [
     active: true,
   },
   {
+    id: 14,
+    title: "Ecommerce Dine Market",
+    description:
+      "Created a websites for Politek and Alfa Spray Foam Insulation companies using wordpress\nDesigned the user interface , intuitive navigation, and visual displays of services\nDeveloped features such as service information, blogs and contact information to improve user experience\nImplemented SEO techniques to increase the visibility and accessibility of the website\n",
+    imageSrc: ["/project-img/ecom.png"],
+    url: "https://full-stack-ecommerce-clothing-web.vercel.app/",
+    sourceUrl: "https://github.com/Sayginsaracoglu/ecommerce-saygin",
+    usedTech: [
+      technologies[0],
+      technologies[1],
+      technologies[2],
+      technologies[3],
+      technologies[5],
+      technologies[10],
+    ],
+    active: true,
+  },
+
+  {
     id: 6,
     title: "Order Management Desktop Application",
     description:
@@ -113,15 +132,6 @@ const projects = [
       "Created a websites for Politek and Alfa Spray Foam Insulation companies using wordpress\nDesigned the user interface , intuitive navigation, and visual displays of services\nDeveloped features such as service information, blogs and contact information to improve user experience\nImplemented SEO techniques to increase the visibility and accessibility of the website\n",
     imageSrc: ["/project-img/alfa.png"],
     url: "https://www.alfapoliuretan.com",
-    active: true,
-  },
-  {
-    id: 14,
-    title: "Ecommerce Dine Market",
-    description:
-      "Created a websites for Politek and Alfa Spray Foam Insulation companies using wordpress\nDesigned the user interface , intuitive navigation, and visual displays of services\nDeveloped features such as service information, blogs and contact information to improve user experience\nImplemented SEO techniques to increase the visibility and accessibility of the website\n",
-    imageSrc: ["/project-img/ecom.png"],
-    url: "https://full-stack-ecommerce-clothing-web.vercel.app/",
     active: true,
   },
 
