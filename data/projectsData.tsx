@@ -30,11 +30,28 @@ const projects = [
     usedTech: [
       technologies[0],
       technologies[1],
-      technologies[2],
       technologies[3],
       technologies[5],
       technologies[10],
     ],
+    active: true,
+  },
+  {
+    id: 11,
+    title: "Politek Spray Foam Insulation",
+    description:
+      "Created a websites for Politek and Alfa Spray Foam Insulation companies using wordpress\nDesigned the user interface with a responsive layout, intuitive navigation, and visual displays of services\nDeveloped features such as service information, blogs and contact information to improve user experience\nImplemented SEO techniques to increase the visibility and accessibility of the website\n",
+    imageSrc: ["/project-img/politek.png"],
+    url: "https://www.politekpoliuretan.com/",
+    active: true,
+  },
+  {
+    id: 14,
+    title: "Alfa Spray Foam Insulation",
+    description:
+      "Created a websites for Politek and Alfa Spray Foam Insulation companies using wordpress\nDesigned the user interface , intuitive navigation, and visual displays of services\nDeveloped features such as service information, blogs and contact information to improve user experience\nImplemented SEO techniques to increase the visibility and accessibility of the website\n",
+    imageSrc: ["/project-img/alfa.png"],
+    url: "https://www.alfapoliuretan.com",
     active: true,
   },
 
@@ -114,24 +131,6 @@ const projects = [
       "A desktop application that allows users to interact with the ChatGPT language model in real-time, built using Python.",
     imageSrc: ["/project-img/heyComputer.png"],
     usedTech: [technologies[8]],
-    active: true,
-  },
-  {
-    id: 11,
-    title: "Politek Spray Foam Insulation",
-    description:
-      "Created a websites for Politek and Alfa Spray Foam Insulation companies using wordpress\nDesigned the user interface with a responsive layout, intuitive navigation, and visual displays of services\nDeveloped features such as service information, blogs and contact information to improve user experience\nImplemented SEO techniques to increase the visibility and accessibility of the website\n",
-    imageSrc: ["/project-img/politek.png"],
-    url: "https://www.politekpoliuretan.com/",
-    active: true,
-  },
-  {
-    id: 14,
-    title: "Alfa Spray Foam Insulation",
-    description:
-      "Created a websites for Politek and Alfa Spray Foam Insulation companies using wordpress\nDesigned the user interface , intuitive navigation, and visual displays of services\nDeveloped features such as service information, blogs and contact information to improve user experience\nImplemented SEO techniques to increase the visibility and accessibility of the website\n",
-    imageSrc: ["/project-img/alfa.png"],
-    url: "https://www.alfapoliuretan.com",
     active: true,
   },
 
