@@ -116,6 +116,16 @@ const projects = [
     active: true,
   },
   {
+    id: 14,
+    title: "Ecommerce Dine Market",
+    description:
+      "Created a websites for Politek and Alfa Spray Foam Insulation companies using wordpress\nDesigned the user interface , intuitive navigation, and visual displays of services\nDeveloped features such as service information, blogs and contact information to improve user experience\nImplemented SEO techniques to increase the visibility and accessibility of the website\n",
+    imageSrc: ["/project-img/ecom.png"],
+    url: "https://full-stack-ecommerce-clothing-web.vercel.app/",
+    active: true,
+  },
+
+  {
     id: 12,
     title: "Google Ad Campaigns",
     description:
